@@ -1,0 +1,1442 @@
+[
+  {
+    "id": "eval_001",
+    "tweet": "@SpotifyCares I was charged twice for Premium this month. Please refund!",
+    "expected_intent": "Billing & Subscription",
+    "expected_action": "escalate",
+    "key_points": "Verify receipts, check for double billing, ask for DM with email.",
+    "human_score_baseline": 5.0
+  },
+  {
+    "id": "eval_002",
+    "tweet": "@SpotifyCares How do I cancel my Student Premium subscription?",
+    "expected_intent": "Billing & Subscription",
+    "expected_action": "auto_reply",
+    "key_points": "Guide user to account settings page under Subscription to manage plan.",
+    "human_score_baseline": 4.0
+  },
+  {
+    "id": "eval_003",
+    "tweet": "@SpotifyCares My payment failed but money was deducted from my bank.",
+    "expected_intent": "Billing & Subscription",
+    "expected_action": "escalate",
+    "key_points": "Explain pending authorization holds, ask for DM if payment doesn't reflect.",
+    "human_score_baseline": 4.0
+  },
+  {
+    "id": "eval_004",
+    "tweet": "@SpotifyCares I forgot my password and the reset link isn't arriving in my email.",
+    "expected_intent": "Account / Login Issues",
+    "expected_action": "auto_reply",
+    "key_points": "Check spam folder, ensure correct email address, try password reset link again.",
+    "human_score_baseline": 5.0
+  },
+  {
+    "id": "eval_005",
+    "tweet": "@SpotifyCares Someone hacked my account! My email and playlist names were changed.",
+    "expected_intent": "Account / Login Issues",
+    "expected_action": "escalate",
+    "key_points": "Immediate escalation for account takeover, request DM with original account details.",
+    "human_score_baseline": 4.5
+  },
+  {
+    "id": "eval_006",
+    "tweet": "@SpotifyCares Can I merge two Spotify accounts into one?",
+    "expected_intent": "Account / Login Issues",
+    "expected_action": "auto_reply",
+    "key_points": "Explain account merging isn't directly supported, suggest transferring playlists manually.",
+    "human_score_baseline": 4.0
+  },
+  {
+    "id": "eval_007",
+    "tweet": "@SpotifyCares Songs keep pausing automatically every 30 seconds on iOS 18.",
+    "expected_intent": "Technical / Playback Bug",
+    "expected_action": "auto_reply",
+    "key_points": "Recommend clean reinstall of the app, check battery saver settings.",
+    "human_score_baseline": 4.0
+  },
+  {
+    "id": "eval_008",
+    "tweet": "@SpotifyCares Offline downloads keep deleting by themselves on my Android phone.",
+    "expected_intent": "Technical / Playback Bug",
+    "expected_action": "auto_reply",
+    "key_points": "Check SD card permissions, clear app cache, ensure device offline storage limit.",
+    "human_score_baseline": 4.0
+  },
+  {
+    "id": "eval_009",
+    "tweet": "@SpotifyCares Spotify Web Player throws Error 404 on Chrome browser.",
+    "expected_intent": "Technical / Playback Bug",
+    "expected_action": "auto_reply",
+    "key_points": "Clear browser cookies/cache, disable ad-blockers or try incognito mode.",
+    "human_score_baseline": 5.0
+  },
+  {
+    "id": "eval_010",
+    "tweet": "@SpotifyCares Here is my email user@domain.com, please check my family plan status.",
+    "expected_intent": "DM / PII Request Required",
+    "expected_action": "escalate",
+    "key_points": "Warn user against posting PII publicly, ask to delete tweet and move to DM.",
+    "human_score_baseline": 4.0
+  },
+  {
+    "id": "eval_011",
+    "tweet": "@SpotifyCares I sent my phone number and receipt in DM, please reply ASAP.",
+    "expected_intent": "DM / PII Request Required",
+    "expected_action": "escalate",
+    "key_points": "Acknowledge DM received, agent will inspect PII privately.",
+    "human_score_baseline": 5.0
+  },
+  {
+    "id": "eval_012",
+    "tweet": "@SpotifyCares When will HiFi lossless audio be released in India?",
+    "expected_intent": "General Inquiry / Feature Request",
+    "expected_action": "auto_reply",
+    "key_points": "No official release date announced yet, keep eye on newsroom/social channels.",
+    "human_score_baseline": 5.0
+  },
+  {
+    "id": "eval_013",
+    "tweet": "@SpotifyCares Can we get a feature to block specific artists from daily mixes?",
+    "expected_intent": "General Inquiry / Feature Request",
+    "expected_action": "auto_reply",
+    "key_points": "Thank user for feature suggestion, direct to Spotify Community ideas board.",
+    "human_score_baseline": 5.0
+  },
+  {
+    "id": "eval_014",
+    "tweet": "@SpotifyCares Your bot is completely useless! Get me a real human manager right now!",
+    "expected_intent": "Escalation Required",
+    "expected_action": "escalate",
+    "key_points": "Apologize for frustration, route directly to human support specialist.",
+    "human_score_baseline": 4.0
+  },
+  {
+    "id": "eval_015",
+    "tweet": "@SpotifyCares Unbelievable scam! You billed me after I cancelled last month. Disgusting!",
+    "expected_intent": "Escalation Required",
+    "expected_action": "escalate",
+    "key_points": "Empathetic tone, escalate immediately to billing supervisor via DM.",
+    "human_score_baseline": 5.0
+  },
+  {
+    "id": "eval_016",
+    "tweet": "@SpotifyCares I was charged twice for Premium this month. Please refund!",
+    "expected_intent": "Billing & Subscription",
+    "expected_action": "escalate",
+    "key_points": "Verify receipts, check for double billing, ask for DM with email.",
+    "human_score_baseline": 4.5
+  },
+  {
+    "id": "eval_017",
+    "tweet": "@SpotifyCares How do I cancel my Student Premium subscription?",
+    "expected_intent": "Billing & Subscription",
+    "expected_action": "auto_reply",
+    "key_points": "Guide user to account settings page under Subscription to manage plan.",
+    "human_score_baseline": 4.0
+  },
+  {
+    "id": "eval_018",
+    "tweet": "@SpotifyCares My payment failed but money was deducted from my bank.",
+    "expected_intent": "Billing & Subscription",
+    "expected_action": "escalate",
+    "key_points": "Explain pending authorization holds, ask for DM if payment doesn't reflect.",
+    "human_score_baseline": 4.0
+  },
+  {
+    "id": "eval_019",
+    "tweet": "@SpotifyCares I forgot my password and the reset link isn't arriving in my email.",
+    "expected_intent": "Account / Login Issues",
+    "expected_action": "auto_reply",
+    "key_points": "Check spam folder, ensure correct email address, try password reset link again.",
+    "human_score_baseline": 4.0
+  },
+  {
+    "id": "eval_020",
+    "tweet": "@SpotifyCares Someone hacked my account! My email and playlist names were changed.",
+    "expected_intent": "Account / Login Issues",
+    "expected_action": "escalate",
+    "key_points": "Immediate escalation for account takeover, request DM with original account details.",
+    "human_score_baseline": 4.0
+  },
+  {
+    "id": "eval_021",
+    "tweet": "@SpotifyCares Can I merge two Spotify accounts into one?",
+    "expected_intent": "Account / Login Issues",
+    "expected_action": "auto_reply",
+    "key_points": "Explain account merging isn't directly supported, suggest transferring playlists manually.",
+    "human_score_baseline": 4.0
+  },
+  {
+    "id": "eval_022",
+    "tweet": "@SpotifyCares Songs keep pausing automatically every 30 seconds on iOS 18.",
+    "expected_intent": "Technical / Playback Bug",
+    "expected_action": "auto_reply",
+    "key_points": "Recommend clean reinstall of the app, check battery saver settings.",
+    "human_score_baseline": 5.0
+  },
+  {
+    "id": "eval_023",
+    "tweet": "@SpotifyCares Offline downloads keep deleting by themselves on my Android phone.",
+    "expected_intent": "Technical / Playback Bug",
+    "expected_action": "auto_reply",
+    "key_points": "Check SD card permissions, clear app cache, ensure device offline storage limit.",
+    "human_score_baseline": 5.0
+  },
+  {
+    "id": "eval_024",
+    "tweet": "@SpotifyCares Spotify Web Player throws Error 404 on Chrome browser.",
+    "expected_intent": "Technical / Playback Bug",
+    "expected_action": "auto_reply",
+    "key_points": "Clear browser cookies/cache, disable ad-blockers or try incognito mode.",
+    "human_score_baseline": 4.0
+  },
+  {
+    "id": "eval_025",
+    "tweet": "@SpotifyCares Here is my email user@domain.com, please check my family plan status.",
+    "expected_intent": "DM / PII Request Required",
+    "expected_action": "escalate",
+    "key_points": "Warn user against posting PII publicly, ask to delete tweet and move to DM.",
+    "human_score_baseline": 5.0
+  },
+  {
+    "id": "eval_026",
+    "tweet": "@SpotifyCares I sent my phone number and receipt in DM, please reply ASAP.",
+    "expected_intent": "DM / PII Request Required",
+    "expected_action": "escalate",
+    "key_points": "Acknowledge DM received, agent will inspect PII privately.",
+    "human_score_baseline": 4.0
+  },
+  {
+    "id": "eval_027",
+    "tweet": "@SpotifyCares When will HiFi lossless audio be released in India?",
+    "expected_intent": "General Inquiry / Feature Request",
+    "expected_action": "auto_reply",
+    "key_points": "No official release date announced yet, keep eye on newsroom/social channels.",
+    "human_score_baseline": 5.0
+  },
+  {
+    "id": "eval_028",
+    "tweet": "@SpotifyCares Can we get a feature to block specific artists from daily mixes?",
+    "expected_intent": "General Inquiry / Feature Request",
+    "expected_action": "auto_reply",
+    "key_points": "Thank user for feature suggestion, direct to Spotify Community ideas board.",
+    "human_score_baseline": 5.0
+  },
+  {
+    "id": "eval_029",
+    "tweet": "@SpotifyCares Your bot is completely useless! Get me a real human manager right now!",
+    "expected_intent": "Escalation Required",
+    "expected_action": "escalate",
+    "key_points": "Apologize for frustration, route directly to human support specialist.",
+    "human_score_baseline": 5.0
+  },
+  {
+    "id": "eval_030",
+    "tweet": "@SpotifyCares Unbelievable scam! You billed me after I cancelled last month. Disgusting!",
+    "expected_intent": "Escalation Required",
+    "expected_action": "escalate",
+    "key_points": "Empathetic tone, escalate immediately to billing supervisor via DM.",
+    "human_score_baseline": 5.0
+  },
+  {
+    "id": "eval_031",
+    "tweet": "@SpotifyCares I was charged twice for Premium this month. Please refund!",
+    "expected_intent": "Billing & Subscription",
+    "expected_action": "escalate",
+    "key_points": "Verify receipts, check for double billing, ask for DM with email.",
+    "human_score_baseline": 4.5
+  },
+  {
+    "id": "eval_032",
+    "tweet": "@SpotifyCares How do I cancel my Student Premium subscription?",
+    "expected_intent": "Billing & Subscription",
+    "expected_action": "auto_reply",
+    "key_points": "Guide user to account settings page under Subscription to manage plan.",
+    "human_score_baseline": 4.0
+  },
+  {
+    "id": "eval_033",
+    "tweet": "@SpotifyCares My payment failed but money was deducted from my bank.",
+    "expected_intent": "Billing & Subscription",
+    "expected_action": "escalate",
+    "key_points": "Explain pending authorization holds, ask for DM if payment doesn't reflect.",
+    "human_score_baseline": 4.5
+  },
+  {
+    "id": "eval_034",
+    "tweet": "@SpotifyCares I forgot my password and the reset link isn't arriving in my email.",
+    "expected_intent": "Account / Login Issues",
+    "expected_action": "auto_reply",
+    "key_points": "Check spam folder, ensure correct email address, try password reset link again.",
+    "human_score_baseline": 5.0
+  },
+  {
+    "id": "eval_035",
+    "tweet": "@SpotifyCares Someone hacked my account! My email and playlist names were changed.",
+    "expected_intent": "Account / Login Issues",
+    "expected_action": "escalate",
+    "key_points": "Immediate escalation for account takeover, request DM with original account details.",
+    "human_score_baseline": 4.5
+  },
+  {
+    "id": "eval_036",
+    "tweet": "@SpotifyCares Can I merge two Spotify accounts into one?",
+    "expected_intent": "Account / Login Issues",
+    "expected_action": "auto_reply",
+    "key_points": "Explain account merging isn't directly supported, suggest transferring playlists manually.",
+    "human_score_baseline": 4.0
+  },
+  {
+    "id": "eval_037",
+    "tweet": "@SpotifyCares Songs keep pausing automatically every 30 seconds on iOS 18.",
+    "expected_intent": "Technical / Playback Bug",
+    "expected_action": "auto_reply",
+    "key_points": "Recommend clean reinstall of the app, check battery saver settings.",
+    "human_score_baseline": 4.0
+  },
+  {
+    "id": "eval_038",
+    "tweet": "@SpotifyCares Offline downloads keep deleting by themselves on my Android phone.",
+    "expected_intent": "Technical / Playback Bug",
+    "expected_action": "auto_reply",
+    "key_points": "Check SD card permissions, clear app cache, ensure device offline storage limit.",
+    "human_score_baseline": 5.0
+  },
+  {
+    "id": "eval_039",
+    "tweet": "@SpotifyCares Spotify Web Player throws Error 404 on Chrome browser.",
+    "expected_intent": "Technical / Playback Bug",
+    "expected_action": "auto_reply",
+    "key_points": "Clear browser cookies/cache, disable ad-blockers or try incognito mode.",
+    "human_score_baseline": 4.5
+  },
+  {
+    "id": "eval_040",
+    "tweet": "@SpotifyCares Here is my email user@domain.com, please check my family plan status.",
+    "expected_intent": "DM / PII Request Required",
+    "expected_action": "escalate",
+    "key_points": "Warn user against posting PII publicly, ask to delete tweet and move to DM.",
+    "human_score_baseline": 4.5
+  },
+  {
+    "id": "eval_041",
+    "tweet": "@SpotifyCares I sent my phone number and receipt in DM, please reply ASAP.",
+    "expected_intent": "DM / PII Request Required",
+    "expected_action": "escalate",
+    "key_points": "Acknowledge DM received, agent will inspect PII privately.",
+    "human_score_baseline": 4.5
+  },
+  {
+    "id": "eval_042",
+    "tweet": "@SpotifyCares When will HiFi lossless audio be released in India?",
+    "expected_intent": "General Inquiry / Feature Request",
+    "expected_action": "auto_reply",
+    "key_points": "No official release date announced yet, keep eye on newsroom/social channels.",
+    "human_score_baseline": 4.0
+  },
+  {
+    "id": "eval_043",
+    "tweet": "@SpotifyCares Can we get a feature to block specific artists from daily mixes?",
+    "expected_intent": "General Inquiry / Feature Request",
+    "expected_action": "auto_reply",
+    "key_points": "Thank user for feature suggestion, direct to Spotify Community ideas board.",
+    "human_score_baseline": 4.0
+  },
+  {
+    "id": "eval_044",
+    "tweet": "@SpotifyCares Your bot is completely useless! Get me a real human manager right now!",
+    "expected_intent": "Escalation Required",
+    "expected_action": "escalate",
+    "key_points": "Apologize for frustration, route directly to human support specialist.",
+    "human_score_baseline": 4.5
+  },
+  {
+    "id": "eval_045",
+    "tweet": "@SpotifyCares Unbelievable scam! You billed me after I cancelled last month. Disgusting!",
+    "expected_intent": "Escalation Required",
+    "expected_action": "escalate",
+    "key_points": "Empathetic tone, escalate immediately to billing supervisor via DM.",
+    "human_score_baseline": 4.0
+  },
+  {
+    "id": "eval_046",
+    "tweet": "@SpotifyCares I was charged twice for Premium this month. Please refund!",
+    "expected_intent": "Billing & Subscription",
+    "expected_action": "escalate",
+    "key_points": "Verify receipts, check for double billing, ask for DM with email.",
+    "human_score_baseline": 4.0
+  },
+  {
+    "id": "eval_047",
+    "tweet": "@SpotifyCares How do I cancel my Student Premium subscription?",
+    "expected_intent": "Billing & Subscription",
+    "expected_action": "auto_reply",
+    "key_points": "Guide user to account settings page under Subscription to manage plan.",
+    "human_score_baseline": 4.5
+  },
+  {
+    "id": "eval_048",
+    "tweet": "@SpotifyCares My payment failed but money was deducted from my bank.",
+    "expected_intent": "Billing & Subscription",
+    "expected_action": "escalate",
+    "key_points": "Explain pending authorization holds, ask for DM if payment doesn't reflect.",
+    "human_score_baseline": 4.0
+  },
+  {
+    "id": "eval_049",
+    "tweet": "@SpotifyCares I forgot my password and the reset link isn't arriving in my email.",
+    "expected_intent": "Account / Login Issues",
+    "expected_action": "auto_reply",
+    "key_points": "Check spam folder, ensure correct email address, try password reset link again.",
+    "human_score_baseline": 4.5
+  },
+  {
+    "id": "eval_050",
+    "tweet": "@SpotifyCares Someone hacked my account! My email and playlist names were changed.",
+    "expected_intent": "Account / Login Issues",
+    "expected_action": "escalate",
+    "key_points": "Immediate escalation for account takeover, request DM with original account details.",
+    "human_score_baseline": 4.5
+  },
+  {
+    "id": "eval_051",
+    "tweet": "@SpotifyCares Can I merge two Spotify accounts into one?",
+    "expected_intent": "Account / Login Issues",
+    "expected_action": "auto_reply",
+    "key_points": "Explain account merging isn't directly supported, suggest transferring playlists manually.",
+    "human_score_baseline": 5.0
+  },
+  {
+    "id": "eval_052",
+    "tweet": "@SpotifyCares Songs keep pausing automatically every 30 seconds on iOS 18.",
+    "expected_intent": "Technical / Playback Bug",
+    "expected_action": "auto_reply",
+    "key_points": "Recommend clean reinstall of the app, check battery saver settings.",
+    "human_score_baseline": 4.5
+  },
+  {
+    "id": "eval_053",
+    "tweet": "@SpotifyCares Offline downloads keep deleting by themselves on my Android phone.",
+    "expected_intent": "Technical / Playback Bug",
+    "expected_action": "auto_reply",
+    "key_points": "Check SD card permissions, clear app cache, ensure device offline storage limit.",
+    "human_score_baseline": 4.0
+  },
+  {
+    "id": "eval_054",
+    "tweet": "@SpotifyCares Spotify Web Player throws Error 404 on Chrome browser.",
+    "expected_intent": "Technical / Playback Bug",
+    "expected_action": "auto_reply",
+    "key_points": "Clear browser cookies/cache, disable ad-blockers or try incognito mode.",
+    "human_score_baseline": 5.0
+  },
+  {
+    "id": "eval_055",
+    "tweet": "@SpotifyCares Here is my email user@domain.com, please check my family plan status.",
+    "expected_intent": "DM / PII Request Required",
+    "expected_action": "escalate",
+    "key_points": "Warn user against posting PII publicly, ask to delete tweet and move to DM.",
+    "human_score_baseline": 4.5
+  },
+  {
+    "id": "eval_056",
+    "tweet": "@SpotifyCares I sent my phone number and receipt in DM, please reply ASAP.",
+    "expected_intent": "DM / PII Request Required",
+    "expected_action": "escalate",
+    "key_points": "Acknowledge DM received, agent will inspect PII privately.",
+    "human_score_baseline": 5.0
+  },
+  {
+    "id": "eval_057",
+    "tweet": "@SpotifyCares When will HiFi lossless audio be released in India?",
+    "expected_intent": "General Inquiry / Feature Request",
+    "expected_action": "auto_reply",
+    "key_points": "No official release date announced yet, keep eye on newsroom/social channels.",
+    "human_score_baseline": 4.0
+  },
+  {
+    "id": "eval_058",
+    "tweet": "@SpotifyCares Can we get a feature to block specific artists from daily mixes?",
+    "expected_intent": "General Inquiry / Feature Request",
+    "expected_action": "auto_reply",
+    "key_points": "Thank user for feature suggestion, direct to Spotify Community ideas board.",
+    "human_score_baseline": 4.5
+  },
+  {
+    "id": "eval_059",
+    "tweet": "@SpotifyCares Your bot is completely useless! Get me a real human manager right now!",
+    "expected_intent": "Escalation Required",
+    "expected_action": "escalate",
+    "key_points": "Apologize for frustration, route directly to human support specialist.",
+    "human_score_baseline": 4.0
+  },
+  {
+    "id": "eval_060",
+    "tweet": "@SpotifyCares Unbelievable scam! You billed me after I cancelled last month. Disgusting!",
+    "expected_intent": "Escalation Required",
+    "expected_action": "escalate",
+    "key_points": "Empathetic tone, escalate immediately to billing supervisor via DM.",
+    "human_score_baseline": 5.0
+  },
+  {
+    "id": "eval_061",
+    "tweet": "@SpotifyCares I was charged twice for Premium this month. Please refund!",
+    "expected_intent": "Billing & Subscription",
+    "expected_action": "escalate",
+    "key_points": "Verify receipts, check for double billing, ask for DM with email.",
+    "human_score_baseline": 4.5
+  },
+  {
+    "id": "eval_062",
+    "tweet": "@SpotifyCares How do I cancel my Student Premium subscription?",
+    "expected_intent": "Billing & Subscription",
+    "expected_action": "auto_reply",
+    "key_points": "Guide user to account settings page under Subscription to manage plan.",
+    "human_score_baseline": 5.0
+  },
+  {
+    "id": "eval_063",
+    "tweet": "@SpotifyCares My payment failed but money was deducted from my bank.",
+    "expected_intent": "Billing & Subscription",
+    "expected_action": "escalate",
+    "key_points": "Explain pending authorization holds, ask for DM if payment doesn't reflect.",
+    "human_score_baseline": 5.0
+  },
+  {
+    "id": "eval_064",
+    "tweet": "@SpotifyCares I forgot my password and the reset link isn't arriving in my email.",
+    "expected_intent": "Account / Login Issues",
+    "expected_action": "auto_reply",
+    "key_points": "Check spam folder, ensure correct email address, try password reset link again.",
+    "human_score_baseline": 4.5
+  },
+  {
+    "id": "eval_065",
+    "tweet": "@SpotifyCares Someone hacked my account! My email and playlist names were changed.",
+    "expected_intent": "Account / Login Issues",
+    "expected_action": "escalate",
+    "key_points": "Immediate escalation for account takeover, request DM with original account details.",
+    "human_score_baseline": 5.0
+  },
+  {
+    "id": "eval_066",
+    "tweet": "@SpotifyCares Can I merge two Spotify accounts into one?",
+    "expected_intent": "Account / Login Issues",
+    "expected_action": "auto_reply",
+    "key_points": "Explain account merging isn't directly supported, suggest transferring playlists manually.",
+    "human_score_baseline": 4.0
+  },
+  {
+    "id": "eval_067",
+    "tweet": "@SpotifyCares Songs keep pausing automatically every 30 seconds on iOS 18.",
+    "expected_intent": "Technical / Playback Bug",
+    "expected_action": "auto_reply",
+    "key_points": "Recommend clean reinstall of the app, check battery saver settings.",
+    "human_score_baseline": 5.0
+  },
+  {
+    "id": "eval_068",
+    "tweet": "@SpotifyCares Offline downloads keep deleting by themselves on my Android phone.",
+    "expected_intent": "Technical / Playback Bug",
+    "expected_action": "auto_reply",
+    "key_points": "Check SD card permissions, clear app cache, ensure device offline storage limit.",
+    "human_score_baseline": 4.0
+  },
+  {
+    "id": "eval_069",
+    "tweet": "@SpotifyCares Spotify Web Player throws Error 404 on Chrome browser.",
+    "expected_intent": "Technical / Playback Bug",
+    "expected_action": "auto_reply",
+    "key_points": "Clear browser cookies/cache, disable ad-blockers or try incognito mode.",
+    "human_score_baseline": 4.0
+  },
+  {
+    "id": "eval_070",
+    "tweet": "@SpotifyCares Here is my email user@domain.com, please check my family plan status.",
+    "expected_intent": "DM / PII Request Required",
+    "expected_action": "escalate",
+    "key_points": "Warn user against posting PII publicly, ask to delete tweet and move to DM.",
+    "human_score_baseline": 5.0
+  },
+  {
+    "id": "eval_071",
+    "tweet": "@SpotifyCares I sent my phone number and receipt in DM, please reply ASAP.",
+    "expected_intent": "DM / PII Request Required",
+    "expected_action": "escalate",
+    "key_points": "Acknowledge DM received, agent will inspect PII privately.",
+    "human_score_baseline": 4.0
+  },
+  {
+    "id": "eval_072",
+    "tweet": "@SpotifyCares When will HiFi lossless audio be released in India?",
+    "expected_intent": "General Inquiry / Feature Request",
+    "expected_action": "auto_reply",
+    "key_points": "No official release date announced yet, keep eye on newsroom/social channels.",
+    "human_score_baseline": 4.5
+  },
+  {
+    "id": "eval_073",
+    "tweet": "@SpotifyCares Can we get a feature to block specific artists from daily mixes?",
+    "expected_intent": "General Inquiry / Feature Request",
+    "expected_action": "auto_reply",
+    "key_points": "Thank user for feature suggestion, direct to Spotify Community ideas board.",
+    "human_score_baseline": 4.0
+  },
+  {
+    "id": "eval_074",
+    "tweet": "@SpotifyCares Your bot is completely useless! Get me a real human manager right now!",
+    "expected_intent": "Escalation Required",
+    "expected_action": "escalate",
+    "key_points": "Apologize for frustration, route directly to human support specialist.",
+    "human_score_baseline": 4.0
+  },
+  {
+    "id": "eval_075",
+    "tweet": "@SpotifyCares Unbelievable scam! You billed me after I cancelled last month. Disgusting!",
+    "expected_intent": "Escalation Required",
+    "expected_action": "escalate",
+    "key_points": "Empathetic tone, escalate immediately to billing supervisor via DM.",
+    "human_score_baseline": 4.0
+  },
+  {
+    "id": "eval_076",
+    "tweet": "@SpotifyCares I was charged twice for Premium this month. Please refund!",
+    "expected_intent": "Billing & Subscription",
+    "expected_action": "escalate",
+    "key_points": "Verify receipts, check for double billing, ask for DM with email.",
+    "human_score_baseline": 4.5
+  },
+  {
+    "id": "eval_077",
+    "tweet": "@SpotifyCares How do I cancel my Student Premium subscription?",
+    "expected_intent": "Billing & Subscription",
+    "expected_action": "auto_reply",
+    "key_points": "Guide user to account settings page under Subscription to manage plan.",
+    "human_score_baseline": 4.5
+  },
+  {
+    "id": "eval_078",
+    "tweet": "@SpotifyCares My payment failed but money was deducted from my bank.",
+    "expected_intent": "Billing & Subscription",
+    "expected_action": "escalate",
+    "key_points": "Explain pending authorization holds, ask for DM if payment doesn't reflect.",
+    "human_score_baseline": 4.5
+  },
+  {
+    "id": "eval_079",
+    "tweet": "@SpotifyCares I forgot my password and the reset link isn't arriving in my email.",
+    "expected_intent": "Account / Login Issues",
+    "expected_action": "auto_reply",
+    "key_points": "Check spam folder, ensure correct email address, try password reset link again.",
+    "human_score_baseline": 5.0
+  },
+  {
+    "id": "eval_080",
+    "tweet": "@SpotifyCares Someone hacked my account! My email and playlist names were changed.",
+    "expected_intent": "Account / Login Issues",
+    "expected_action": "escalate",
+    "key_points": "Immediate escalation for account takeover, request DM with original account details.",
+    "human_score_baseline": 4.5
+  },
+  {
+    "id": "eval_081",
+    "tweet": "@SpotifyCares Can I merge two Spotify accounts into one?",
+    "expected_intent": "Account / Login Issues",
+    "expected_action": "auto_reply",
+    "key_points": "Explain account merging isn't directly supported, suggest transferring playlists manually.",
+    "human_score_baseline": 4.0
+  },
+  {
+    "id": "eval_082",
+    "tweet": "@SpotifyCares Songs keep pausing automatically every 30 seconds on iOS 18.",
+    "expected_intent": "Technical / Playback Bug",
+    "expected_action": "auto_reply",
+    "key_points": "Recommend clean reinstall of the app, check battery saver settings.",
+    "human_score_baseline": 4.5
+  },
+  {
+    "id": "eval_083",
+    "tweet": "@SpotifyCares Offline downloads keep deleting by themselves on my Android phone.",
+    "expected_intent": "Technical / Playback Bug",
+    "expected_action": "auto_reply",
+    "key_points": "Check SD card permissions, clear app cache, ensure device offline storage limit.",
+    "human_score_baseline": 4.5
+  },
+  {
+    "id": "eval_084",
+    "tweet": "@SpotifyCares Spotify Web Player throws Error 404 on Chrome browser.",
+    "expected_intent": "Technical / Playback Bug",
+    "expected_action": "auto_reply",
+    "key_points": "Clear browser cookies/cache, disable ad-blockers or try incognito mode.",
+    "human_score_baseline": 4.0
+  },
+  {
+    "id": "eval_085",
+    "tweet": "@SpotifyCares Here is my email user@domain.com, please check my family plan status.",
+    "expected_intent": "DM / PII Request Required",
+    "expected_action": "escalate",
+    "key_points": "Warn user against posting PII publicly, ask to delete tweet and move to DM.",
+    "human_score_baseline": 5.0
+  },
+  {
+    "id": "eval_086",
+    "tweet": "@SpotifyCares I sent my phone number and receipt in DM, please reply ASAP.",
+    "expected_intent": "DM / PII Request Required",
+    "expected_action": "escalate",
+    "key_points": "Acknowledge DM received, agent will inspect PII privately.",
+    "human_score_baseline": 4.5
+  },
+  {
+    "id": "eval_087",
+    "tweet": "@SpotifyCares When will HiFi lossless audio be released in India?",
+    "expected_intent": "General Inquiry / Feature Request",
+    "expected_action": "auto_reply",
+    "key_points": "No official release date announced yet, keep eye on newsroom/social channels.",
+    "human_score_baseline": 5.0
+  },
+  {
+    "id": "eval_088",
+    "tweet": "@SpotifyCares Can we get a feature to block specific artists from daily mixes?",
+    "expected_intent": "General Inquiry / Feature Request",
+    "expected_action": "auto_reply",
+    "key_points": "Thank user for feature suggestion, direct to Spotify Community ideas board.",
+    "human_score_baseline": 5.0
+  },
+  {
+    "id": "eval_089",
+    "tweet": "@SpotifyCares Your bot is completely useless! Get me a real human manager right now!",
+    "expected_intent": "Escalation Required",
+    "expected_action": "escalate",
+    "key_points": "Apologize for frustration, route directly to human support specialist.",
+    "human_score_baseline": 5.0
+  },
+  {
+    "id": "eval_090",
+    "tweet": "@SpotifyCares Unbelievable scam! You billed me after I cancelled last month. Disgusting!",
+    "expected_intent": "Escalation Required",
+    "expected_action": "escalate",
+    "key_points": "Empathetic tone, escalate immediately to billing supervisor via DM.",
+    "human_score_baseline": 4.0
+  },
+  {
+    "id": "eval_091",
+    "tweet": "@SpotifyCares I was charged twice for Premium this month. Please refund!",
+    "expected_intent": "Billing & Subscription",
+    "expected_action": "escalate",
+    "key_points": "Verify receipts, check for double billing, ask for DM with email.",
+    "human_score_baseline": 5.0
+  },
+  {
+    "id": "eval_092",
+    "tweet": "@SpotifyCares How do I cancel my Student Premium subscription?",
+    "expected_intent": "Billing & Subscription",
+    "expected_action": "auto_reply",
+    "key_points": "Guide user to account settings page under Subscription to manage plan.",
+    "human_score_baseline": 5.0
+  },
+  {
+    "id": "eval_093",
+    "tweet": "@SpotifyCares My payment failed but money was deducted from my bank.",
+    "expected_intent": "Billing & Subscription",
+    "expected_action": "escalate",
+    "key_points": "Explain pending authorization holds, ask for DM if payment doesn't reflect.",
+    "human_score_baseline": 4.0
+  },
+  {
+    "id": "eval_094",
+    "tweet": "@SpotifyCares I forgot my password and the reset link isn't arriving in my email.",
+    "expected_intent": "Account / Login Issues",
+    "expected_action": "auto_reply",
+    "key_points": "Check spam folder, ensure correct email address, try password reset link again.",
+    "human_score_baseline": 5.0
+  },
+  {
+    "id": "eval_095",
+    "tweet": "@SpotifyCares Someone hacked my account! My email and playlist names were changed.",
+    "expected_intent": "Account / Login Issues",
+    "expected_action": "escalate",
+    "key_points": "Immediate escalation for account takeover, request DM with original account details.",
+    "human_score_baseline": 5.0
+  },
+  {
+    "id": "eval_096",
+    "tweet": "@SpotifyCares Can I merge two Spotify accounts into one?",
+    "expected_intent": "Account / Login Issues",
+    "expected_action": "auto_reply",
+    "key_points": "Explain account merging isn't directly supported, suggest transferring playlists manually.",
+    "human_score_baseline": 4.0
+  },
+  {
+    "id": "eval_097",
+    "tweet": "@SpotifyCares Songs keep pausing automatically every 30 seconds on iOS 18.",
+    "expected_intent": "Technical / Playback Bug",
+    "expected_action": "auto_reply",
+    "key_points": "Recommend clean reinstall of the app, check battery saver settings.",
+    "human_score_baseline": 4.0
+  },
+  {
+    "id": "eval_098",
+    "tweet": "@SpotifyCares Offline downloads keep deleting by themselves on my Android phone.",
+    "expected_intent": "Technical / Playback Bug",
+    "expected_action": "auto_reply",
+    "key_points": "Check SD card permissions, clear app cache, ensure device offline storage limit.",
+    "human_score_baseline": 4.5
+  },
+  {
+    "id": "eval_099",
+    "tweet": "@SpotifyCares Spotify Web Player throws Error 404 on Chrome browser.",
+    "expected_intent": "Technical / Playback Bug",
+    "expected_action": "auto_reply",
+    "key_points": "Clear browser cookies/cache, disable ad-blockers or try incognito mode.",
+    "human_score_baseline": 4.5
+  },
+  {
+    "id": "eval_100",
+    "tweet": "@SpotifyCares Here is my email user@domain.com, please check my family plan status.",
+    "expected_intent": "DM / PII Request Required",
+    "expected_action": "escalate",
+    "key_points": "Warn user against posting PII publicly, ask to delete tweet and move to DM.",
+    "human_score_baseline": 4.5
+  },
+  {
+    "id": "eval_101",
+    "tweet": "@SpotifyCares I sent my phone number and receipt in DM, please reply ASAP.",
+    "expected_intent": "DM / PII Request Required",
+    "expected_action": "escalate",
+    "key_points": "Acknowledge DM received, agent will inspect PII privately.",
+    "human_score_baseline": 5.0
+  },
+  {
+    "id": "eval_102",
+    "tweet": "@SpotifyCares When will HiFi lossless audio be released in India?",
+    "expected_intent": "General Inquiry / Feature Request",
+    "expected_action": "auto_reply",
+    "key_points": "No official release date announced yet, keep eye on newsroom/social channels.",
+    "human_score_baseline": 5.0
+  },
+  {
+    "id": "eval_103",
+    "tweet": "@SpotifyCares Can we get a feature to block specific artists from daily mixes?",
+    "expected_intent": "General Inquiry / Feature Request",
+    "expected_action": "auto_reply",
+    "key_points": "Thank user for feature suggestion, direct to Spotify Community ideas board.",
+    "human_score_baseline": 5.0
+  },
+  {
+    "id": "eval_104",
+    "tweet": "@SpotifyCares Your bot is completely useless! Get me a real human manager right now!",
+    "expected_intent": "Escalation Required",
+    "expected_action": "escalate",
+    "key_points": "Apologize for frustration, route directly to human support specialist.",
+    "human_score_baseline": 4.0
+  },
+  {
+    "id": "eval_105",
+    "tweet": "@SpotifyCares Unbelievable scam! You billed me after I cancelled last month. Disgusting!",
+    "expected_intent": "Escalation Required",
+    "expected_action": "escalate",
+    "key_points": "Empathetic tone, escalate immediately to billing supervisor via DM.",
+    "human_score_baseline": 5.0
+  },
+  {
+    "id": "eval_106",
+    "tweet": "@SpotifyCares I was charged twice for Premium this month. Please refund!",
+    "expected_intent": "Billing & Subscription",
+    "expected_action": "escalate",
+    "key_points": "Verify receipts, check for double billing, ask for DM with email.",
+    "human_score_baseline": 4.5
+  },
+  {
+    "id": "eval_107",
+    "tweet": "@SpotifyCares How do I cancel my Student Premium subscription?",
+    "expected_intent": "Billing & Subscription",
+    "expected_action": "auto_reply",
+    "key_points": "Guide user to account settings page under Subscription to manage plan.",
+    "human_score_baseline": 4.0
+  },
+  {
+    "id": "eval_108",
+    "tweet": "@SpotifyCares My payment failed but money was deducted from my bank.",
+    "expected_intent": "Billing & Subscription",
+    "expected_action": "escalate",
+    "key_points": "Explain pending authorization holds, ask for DM if payment doesn't reflect.",
+    "human_score_baseline": 4.0
+  },
+  {
+    "id": "eval_109",
+    "tweet": "@SpotifyCares I forgot my password and the reset link isn't arriving in my email.",
+    "expected_intent": "Account / Login Issues",
+    "expected_action": "auto_reply",
+    "key_points": "Check spam folder, ensure correct email address, try password reset link again.",
+    "human_score_baseline": 4.0
+  },
+  {
+    "id": "eval_110",
+    "tweet": "@SpotifyCares Someone hacked my account! My email and playlist names were changed.",
+    "expected_intent": "Account / Login Issues",
+    "expected_action": "escalate",
+    "key_points": "Immediate escalation for account takeover, request DM with original account details.",
+    "human_score_baseline": 4.5
+  },
+  {
+    "id": "eval_111",
+    "tweet": "@SpotifyCares Can I merge two Spotify accounts into one?",
+    "expected_intent": "Account / Login Issues",
+    "expected_action": "auto_reply",
+    "key_points": "Explain account merging isn't directly supported, suggest transferring playlists manually.",
+    "human_score_baseline": 4.5
+  },
+  {
+    "id": "eval_112",
+    "tweet": "@SpotifyCares Songs keep pausing automatically every 30 seconds on iOS 18.",
+    "expected_intent": "Technical / Playback Bug",
+    "expected_action": "auto_reply",
+    "key_points": "Recommend clean reinstall of the app, check battery saver settings.",
+    "human_score_baseline": 4.5
+  },
+  {
+    "id": "eval_113",
+    "tweet": "@SpotifyCares Offline downloads keep deleting by themselves on my Android phone.",
+    "expected_intent": "Technical / Playback Bug",
+    "expected_action": "auto_reply",
+    "key_points": "Check SD card permissions, clear app cache, ensure device offline storage limit.",
+    "human_score_baseline": 4.0
+  },
+  {
+    "id": "eval_114",
+    "tweet": "@SpotifyCares Spotify Web Player throws Error 404 on Chrome browser.",
+    "expected_intent": "Technical / Playback Bug",
+    "expected_action": "auto_reply",
+    "key_points": "Clear browser cookies/cache, disable ad-blockers or try incognito mode.",
+    "human_score_baseline": 4.0
+  },
+  {
+    "id": "eval_115",
+    "tweet": "@SpotifyCares Here is my email user@domain.com, please check my family plan status.",
+    "expected_intent": "DM / PII Request Required",
+    "expected_action": "escalate",
+    "key_points": "Warn user against posting PII publicly, ask to delete tweet and move to DM.",
+    "human_score_baseline": 5.0
+  },
+  {
+    "id": "eval_116",
+    "tweet": "@SpotifyCares I sent my phone number and receipt in DM, please reply ASAP.",
+    "expected_intent": "DM / PII Request Required",
+    "expected_action": "escalate",
+    "key_points": "Acknowledge DM received, agent will inspect PII privately.",
+    "human_score_baseline": 5.0
+  },
+  {
+    "id": "eval_117",
+    "tweet": "@SpotifyCares When will HiFi lossless audio be released in India?",
+    "expected_intent": "General Inquiry / Feature Request",
+    "expected_action": "auto_reply",
+    "key_points": "No official release date announced yet, keep eye on newsroom/social channels.",
+    "human_score_baseline": 4.5
+  },
+  {
+    "id": "eval_118",
+    "tweet": "@SpotifyCares Can we get a feature to block specific artists from daily mixes?",
+    "expected_intent": "General Inquiry / Feature Request",
+    "expected_action": "auto_reply",
+    "key_points": "Thank user for feature suggestion, direct to Spotify Community ideas board.",
+    "human_score_baseline": 4.0
+  },
+  {
+    "id": "eval_119",
+    "tweet": "@SpotifyCares Your bot is completely useless! Get me a real human manager right now!",
+    "expected_intent": "Escalation Required",
+    "expected_action": "escalate",
+    "key_points": "Apologize for frustration, route directly to human support specialist.",
+    "human_score_baseline": 5.0
+  },
+  {
+    "id": "eval_120",
+    "tweet": "@SpotifyCares Unbelievable scam! You billed me after I cancelled last month. Disgusting!",
+    "expected_intent": "Escalation Required",
+    "expected_action": "escalate",
+    "key_points": "Empathetic tone, escalate immediately to billing supervisor via DM.",
+    "human_score_baseline": 4.5
+  },
+  {
+    "id": "eval_121",
+    "tweet": "@SpotifyCares I was charged twice for Premium this month. Please refund!",
+    "expected_intent": "Billing & Subscription",
+    "expected_action": "escalate",
+    "key_points": "Verify receipts, check for double billing, ask for DM with email.",
+    "human_score_baseline": 4.5
+  },
+  {
+    "id": "eval_122",
+    "tweet": "@SpotifyCares How do I cancel my Student Premium subscription?",
+    "expected_intent": "Billing & Subscription",
+    "expected_action": "auto_reply",
+    "key_points": "Guide user to account settings page under Subscription to manage plan.",
+    "human_score_baseline": 5.0
+  },
+  {
+    "id": "eval_123",
+    "tweet": "@SpotifyCares My payment failed but money was deducted from my bank.",
+    "expected_intent": "Billing & Subscription",
+    "expected_action": "escalate",
+    "key_points": "Explain pending authorization holds, ask for DM if payment doesn't reflect.",
+    "human_score_baseline": 4.5
+  },
+  {
+    "id": "eval_124",
+    "tweet": "@SpotifyCares I forgot my password and the reset link isn't arriving in my email.",
+    "expected_intent": "Account / Login Issues",
+    "expected_action": "auto_reply",
+    "key_points": "Check spam folder, ensure correct email address, try password reset link again.",
+    "human_score_baseline": 4.0
+  },
+  {
+    "id": "eval_125",
+    "tweet": "@SpotifyCares Someone hacked my account! My email and playlist names were changed.",
+    "expected_intent": "Account / Login Issues",
+    "expected_action": "escalate",
+    "key_points": "Immediate escalation for account takeover, request DM with original account details.",
+    "human_score_baseline": 4.5
+  },
+  {
+    "id": "eval_126",
+    "tweet": "@SpotifyCares Can I merge two Spotify accounts into one?",
+    "expected_intent": "Account / Login Issues",
+    "expected_action": "auto_reply",
+    "key_points": "Explain account merging isn't directly supported, suggest transferring playlists manually.",
+    "human_score_baseline": 4.0
+  },
+  {
+    "id": "eval_127",
+    "tweet": "@SpotifyCares Songs keep pausing automatically every 30 seconds on iOS 18.",
+    "expected_intent": "Technical / Playback Bug",
+    "expected_action": "auto_reply",
+    "key_points": "Recommend clean reinstall of the app, check battery saver settings.",
+    "human_score_baseline": 4.0
+  },
+  {
+    "id": "eval_128",
+    "tweet": "@SpotifyCares Offline downloads keep deleting by themselves on my Android phone.",
+    "expected_intent": "Technical / Playback Bug",
+    "expected_action": "auto_reply",
+    "key_points": "Check SD card permissions, clear app cache, ensure device offline storage limit.",
+    "human_score_baseline": 5.0
+  },
+  {
+    "id": "eval_129",
+    "tweet": "@SpotifyCares Spotify Web Player throws Error 404 on Chrome browser.",
+    "expected_intent": "Technical / Playback Bug",
+    "expected_action": "auto_reply",
+    "key_points": "Clear browser cookies/cache, disable ad-blockers or try incognito mode.",
+    "human_score_baseline": 5.0
+  },
+  {
+    "id": "eval_130",
+    "tweet": "@SpotifyCares Here is my email user@domain.com, please check my family plan status.",
+    "expected_intent": "DM / PII Request Required",
+    "expected_action": "escalate",
+    "key_points": "Warn user against posting PII publicly, ask to delete tweet and move to DM.",
+    "human_score_baseline": 5.0
+  },
+  {
+    "id": "eval_131",
+    "tweet": "@SpotifyCares I sent my phone number and receipt in DM, please reply ASAP.",
+    "expected_intent": "DM / PII Request Required",
+    "expected_action": "escalate",
+    "key_points": "Acknowledge DM received, agent will inspect PII privately.",
+    "human_score_baseline": 4.5
+  },
+  {
+    "id": "eval_132",
+    "tweet": "@SpotifyCares When will HiFi lossless audio be released in India?",
+    "expected_intent": "General Inquiry / Feature Request",
+    "expected_action": "auto_reply",
+    "key_points": "No official release date announced yet, keep eye on newsroom/social channels.",
+    "human_score_baseline": 5.0
+  },
+  {
+    "id": "eval_133",
+    "tweet": "@SpotifyCares Can we get a feature to block specific artists from daily mixes?",
+    "expected_intent": "General Inquiry / Feature Request",
+    "expected_action": "auto_reply",
+    "key_points": "Thank user for feature suggestion, direct to Spotify Community ideas board.",
+    "human_score_baseline": 5.0
+  },
+  {
+    "id": "eval_134",
+    "tweet": "@SpotifyCares Your bot is completely useless! Get me a real human manager right now!",
+    "expected_intent": "Escalation Required",
+    "expected_action": "escalate",
+    "key_points": "Apologize for frustration, route directly to human support specialist.",
+    "human_score_baseline": 4.5
+  },
+  {
+    "id": "eval_135",
+    "tweet": "@SpotifyCares Unbelievable scam! You billed me after I cancelled last month. Disgusting!",
+    "expected_intent": "Escalation Required",
+    "expected_action": "escalate",
+    "key_points": "Empathetic tone, escalate immediately to billing supervisor via DM.",
+    "human_score_baseline": 5.0
+  },
+  {
+    "id": "eval_136",
+    "tweet": "@SpotifyCares I was charged twice for Premium this month. Please refund!",
+    "expected_intent": "Billing & Subscription",
+    "expected_action": "escalate",
+    "key_points": "Verify receipts, check for double billing, ask for DM with email.",
+    "human_score_baseline": 4.5
+  },
+  {
+    "id": "eval_137",
+    "tweet": "@SpotifyCares How do I cancel my Student Premium subscription?",
+    "expected_intent": "Billing & Subscription",
+    "expected_action": "auto_reply",
+    "key_points": "Guide user to account settings page under Subscription to manage plan.",
+    "human_score_baseline": 4.5
+  },
+  {
+    "id": "eval_138",
+    "tweet": "@SpotifyCares My payment failed but money was deducted from my bank.",
+    "expected_intent": "Billing & Subscription",
+    "expected_action": "escalate",
+    "key_points": "Explain pending authorization holds, ask for DM if payment doesn't reflect.",
+    "human_score_baseline": 4.0
+  },
+  {
+    "id": "eval_139",
+    "tweet": "@SpotifyCares I forgot my password and the reset link isn't arriving in my email.",
+    "expected_intent": "Account / Login Issues",
+    "expected_action": "auto_reply",
+    "key_points": "Check spam folder, ensure correct email address, try password reset link again.",
+    "human_score_baseline": 4.0
+  },
+  {
+    "id": "eval_140",
+    "tweet": "@SpotifyCares Someone hacked my account! My email and playlist names were changed.",
+    "expected_intent": "Account / Login Issues",
+    "expected_action": "escalate",
+    "key_points": "Immediate escalation for account takeover, request DM with original account details.",
+    "human_score_baseline": 5.0
+  },
+  {
+    "id": "eval_141",
+    "tweet": "@SpotifyCares Can I merge two Spotify accounts into one?",
+    "expected_intent": "Account / Login Issues",
+    "expected_action": "auto_reply",
+    "key_points": "Explain account merging isn't directly supported, suggest transferring playlists manually.",
+    "human_score_baseline": 4.5
+  },
+  {
+    "id": "eval_142",
+    "tweet": "@SpotifyCares Songs keep pausing automatically every 30 seconds on iOS 18.",
+    "expected_intent": "Technical / Playback Bug",
+    "expected_action": "auto_reply",
+    "key_points": "Recommend clean reinstall of the app, check battery saver settings.",
+    "human_score_baseline": 4.0
+  },
+  {
+    "id": "eval_143",
+    "tweet": "@SpotifyCares Offline downloads keep deleting by themselves on my Android phone.",
+    "expected_intent": "Technical / Playback Bug",
+    "expected_action": "auto_reply",
+    "key_points": "Check SD card permissions, clear app cache, ensure device offline storage limit.",
+    "human_score_baseline": 4.0
+  },
+  {
+    "id": "eval_144",
+    "tweet": "@SpotifyCares Spotify Web Player throws Error 404 on Chrome browser.",
+    "expected_intent": "Technical / Playback Bug",
+    "expected_action": "auto_reply",
+    "key_points": "Clear browser cookies/cache, disable ad-blockers or try incognito mode.",
+    "human_score_baseline": 4.0
+  },
+  {
+    "id": "eval_145",
+    "tweet": "@SpotifyCares Here is my email user@domain.com, please check my family plan status.",
+    "expected_intent": "DM / PII Request Required",
+    "expected_action": "escalate",
+    "key_points": "Warn user against posting PII publicly, ask to delete tweet and move to DM.",
+    "human_score_baseline": 4.0
+  },
+  {
+    "id": "eval_146",
+    "tweet": "@SpotifyCares I sent my phone number and receipt in DM, please reply ASAP.",
+    "expected_intent": "DM / PII Request Required",
+    "expected_action": "escalate",
+    "key_points": "Acknowledge DM received, agent will inspect PII privately.",
+    "human_score_baseline": 5.0
+  },
+  {
+    "id": "eval_147",
+    "tweet": "@SpotifyCares When will HiFi lossless audio be released in India?",
+    "expected_intent": "General Inquiry / Feature Request",
+    "expected_action": "auto_reply",
+    "key_points": "No official release date announced yet, keep eye on newsroom/social channels.",
+    "human_score_baseline": 4.0
+  },
+  {
+    "id": "eval_148",
+    "tweet": "@SpotifyCares Can we get a feature to block specific artists from daily mixes?",
+    "expected_intent": "General Inquiry / Feature Request",
+    "expected_action": "auto_reply",
+    "key_points": "Thank user for feature suggestion, direct to Spotify Community ideas board.",
+    "human_score_baseline": 5.0
+  },
+  {
+    "id": "eval_149",
+    "tweet": "@SpotifyCares Your bot is completely useless! Get me a real human manager right now!",
+    "expected_intent": "Escalation Required",
+    "expected_action": "escalate",
+    "key_points": "Apologize for frustration, route directly to human support specialist.",
+    "human_score_baseline": 4.5
+  },
+  {
+    "id": "eval_150",
+    "tweet": "@SpotifyCares Unbelievable scam! You billed me after I cancelled last month. Disgusting!",
+    "expected_intent": "Escalation Required",
+    "expected_action": "escalate",
+    "key_points": "Empathetic tone, escalate immediately to billing supervisor via DM.",
+    "human_score_baseline": 5.0
+  },
+  {
+    "id": "eval_151",
+    "tweet": "@SpotifyCares I was charged twice for Premium this month. Please refund!",
+    "expected_intent": "Billing & Subscription",
+    "expected_action": "escalate",
+    "key_points": "Verify receipts, check for double billing, ask for DM with email.",
+    "human_score_baseline": 4.0
+  },
+  {
+    "id": "eval_152",
+    "tweet": "@SpotifyCares How do I cancel my Student Premium subscription?",
+    "expected_intent": "Billing & Subscription",
+    "expected_action": "auto_reply",
+    "key_points": "Guide user to account settings page under Subscription to manage plan.",
+    "human_score_baseline": 4.5
+  },
+  {
+    "id": "eval_153",
+    "tweet": "@SpotifyCares My payment failed but money was deducted from my bank.",
+    "expected_intent": "Billing & Subscription",
+    "expected_action": "escalate",
+    "key_points": "Explain pending authorization holds, ask for DM if payment doesn't reflect.",
+    "human_score_baseline": 4.5
+  },
+  {
+    "id": "eval_154",
+    "tweet": "@SpotifyCares I forgot my password and the reset link isn't arriving in my email.",
+    "expected_intent": "Account / Login Issues",
+    "expected_action": "auto_reply",
+    "key_points": "Check spam folder, ensure correct email address, try password reset link again.",
+    "human_score_baseline": 5.0
+  },
+  {
+    "id": "eval_155",
+    "tweet": "@SpotifyCares Someone hacked my account! My email and playlist names were changed.",
+    "expected_intent": "Account / Login Issues",
+    "expected_action": "escalate",
+    "key_points": "Immediate escalation for account takeover, request DM with original account details.",
+    "human_score_baseline": 4.5
+  },
+  {
+    "id": "eval_156",
+    "tweet": "@SpotifyCares Can I merge two Spotify accounts into one?",
+    "expected_intent": "Account / Login Issues",
+    "expected_action": "auto_reply",
+    "key_points": "Explain account merging isn't directly supported, suggest transferring playlists manually.",
+    "human_score_baseline": 5.0
+  },
+  {
+    "id": "eval_157",
+    "tweet": "@SpotifyCares Songs keep pausing automatically every 30 seconds on iOS 18.",
+    "expected_intent": "Technical / Playback Bug",
+    "expected_action": "auto_reply",
+    "key_points": "Recommend clean reinstall of the app, check battery saver settings.",
+    "human_score_baseline": 4.5
+  },
+  {
+    "id": "eval_158",
+    "tweet": "@SpotifyCares Offline downloads keep deleting by themselves on my Android phone.",
+    "expected_intent": "Technical / Playback Bug",
+    "expected_action": "auto_reply",
+    "key_points": "Check SD card permissions, clear app cache, ensure device offline storage limit.",
+    "human_score_baseline": 5.0
+  },
+  {
+    "id": "eval_159",
+    "tweet": "@SpotifyCares Spotify Web Player throws Error 404 on Chrome browser.",
+    "expected_intent": "Technical / Playback Bug",
+    "expected_action": "auto_reply",
+    "key_points": "Clear browser cookies/cache, disable ad-blockers or try incognito mode.",
+    "human_score_baseline": 4.0
+  },
+  {
+    "id": "eval_160",
+    "tweet": "@SpotifyCares Here is my email user@domain.com, please check my family plan status.",
+    "expected_intent": "DM / PII Request Required",
+    "expected_action": "escalate",
+    "key_points": "Warn user against posting PII publicly, ask to delete tweet and move to DM.",
+    "human_score_baseline": 5.0
+  },
+  {
+    "id": "eval_161",
+    "tweet": "@SpotifyCares I sent my phone number and receipt in DM, please reply ASAP.",
+    "expected_intent": "DM / PII Request Required",
+    "expected_action": "escalate",
+    "key_points": "Acknowledge DM received, agent will inspect PII privately.",
+    "human_score_baseline": 5.0
+  },
+  {
+    "id": "eval_162",
+    "tweet": "@SpotifyCares When will HiFi lossless audio be released in India?",
+    "expected_intent": "General Inquiry / Feature Request",
+    "expected_action": "auto_reply",
+    "key_points": "No official release date announced yet, keep eye on newsroom/social channels.",
+    "human_score_baseline": 4.0
+  },
+  {
+    "id": "eval_163",
+    "tweet": "@SpotifyCares Can we get a feature to block specific artists from daily mixes?",
+    "expected_intent": "General Inquiry / Feature Request",
+    "expected_action": "auto_reply",
+    "key_points": "Thank user for feature suggestion, direct to Spotify Community ideas board.",
+    "human_score_baseline": 5.0
+  },
+  {
+    "id": "eval_164",
+    "tweet": "@SpotifyCares Your bot is completely useless! Get me a real human manager right now!",
+    "expected_intent": "Escalation Required",
+    "expected_action": "escalate",
+    "key_points": "Apologize for frustration, route directly to human support specialist.",
+    "human_score_baseline": 5.0
+  },
+  {
+    "id": "eval_165",
+    "tweet": "@SpotifyCares Unbelievable scam! You billed me after I cancelled last month. Disgusting!",
+    "expected_intent": "Escalation Required",
+    "expected_action": "escalate",
+    "key_points": "Empathetic tone, escalate immediately to billing supervisor via DM.",
+    "human_score_baseline": 4.5
+  },
+  {
+    "id": "eval_166",
+    "tweet": "@SpotifyCares I was charged twice for Premium this month. Please refund!",
+    "expected_intent": "Billing & Subscription",
+    "expected_action": "escalate",
+    "key_points": "Verify receipts, check for double billing, ask for DM with email.",
+    "human_score_baseline": 5.0
+  },
+  {
+    "id": "eval_167",
+    "tweet": "@SpotifyCares How do I cancel my Student Premium subscription?",
+    "expected_intent": "Billing & Subscription",
+    "expected_action": "auto_reply",
+    "key_points": "Guide user to account settings page under Subscription to manage plan.",
+    "human_score_baseline": 4.5
+  },
+  {
+    "id": "eval_168",
+    "tweet": "@SpotifyCares My payment failed but money was deducted from my bank.",
+    "expected_intent": "Billing & Subscription",
+    "expected_action": "escalate",
+    "key_points": "Explain pending authorization holds, ask for DM if payment doesn't reflect.",
+    "human_score_baseline": 4.0
+  },
+  {
+    "id": "eval_169",
+    "tweet": "@SpotifyCares I forgot my password and the reset link isn't arriving in my email.",
+    "expected_intent": "Account / Login Issues",
+    "expected_action": "auto_reply",
+    "key_points": "Check spam folder, ensure correct email address, try password reset link again.",
+    "human_score_baseline": 4.5
+  },
+  {
+    "id": "eval_170",
+    "tweet": "@SpotifyCares Someone hacked my account! My email and playlist names were changed.",
+    "expected_intent": "Account / Login Issues",
+    "expected_action": "escalate",
+    "key_points": "Immediate escalation for account takeover, request DM with original account details.",
+    "human_score_baseline": 4.5
+  },
+  {
+    "id": "eval_171",
+    "tweet": "@SpotifyCares Can I merge two Spotify accounts into one?",
+    "expected_intent": "Account / Login Issues",
+    "expected_action": "auto_reply",
+    "key_points": "Explain account merging isn't directly supported, suggest transferring playlists manually.",
+    "human_score_baseline": 4.0
+  },
+  {
+    "id": "eval_172",
+    "tweet": "@SpotifyCares Songs keep pausing automatically every 30 seconds on iOS 18.",
+    "expected_intent": "Technical / Playback Bug",
+    "expected_action": "auto_reply",
+    "key_points": "Recommend clean reinstall of the app, check battery saver settings.",
+    "human_score_baseline": 4.5
+  },
+  {
+    "id": "eval_173",
+    "tweet": "@SpotifyCares Offline downloads keep deleting by themselves on my Android phone.",
+    "expected_intent": "Technical / Playback Bug",
+    "expected_action": "auto_reply",
+    "key_points": "Check SD card permissions, clear app cache, ensure device offline storage limit.",
+    "human_score_baseline": 4.0
+  },
+  {
+    "id": "eval_174",
+    "tweet": "@SpotifyCares Spotify Web Player throws Error 404 on Chrome browser.",
+    "expected_intent": "Technical / Playback Bug",
+    "expected_action": "auto_reply",
+    "key_points": "Clear browser cookies/cache, disable ad-blockers or try incognito mode.",
+    "human_score_baseline": 5.0
+  },
+  {
+    "id": "eval_175",
+    "tweet": "@SpotifyCares Here is my email user@domain.com, please check my family plan status.",
+    "expected_intent": "DM / PII Request Required",
+    "expected_action": "escalate",
+    "key_points": "Warn user against posting PII publicly, ask to delete tweet and move to DM.",
+    "human_score_baseline": 5.0
+  },
+  {
+    "id": "eval_176",
+    "tweet": "@SpotifyCares I sent my phone number and receipt in DM, please reply ASAP.",
+    "expected_intent": "DM / PII Request Required",
+    "expected_action": "escalate",
+    "key_points": "Acknowledge DM received, agent will inspect PII privately.",
+    "human_score_baseline": 4.5
+  },
+  {
+    "id": "eval_177",
+    "tweet": "@SpotifyCares When will HiFi lossless audio be released in India?",
+    "expected_intent": "General Inquiry / Feature Request",
+    "expected_action": "auto_reply",
+    "key_points": "No official release date announced yet, keep eye on newsroom/social channels.",
+    "human_score_baseline": 5.0
+  },
+  {
+    "id": "eval_178",
+    "tweet": "@SpotifyCares Can we get a feature to block specific artists from daily mixes?",
+    "expected_intent": "General Inquiry / Feature Request",
+    "expected_action": "auto_reply",
+    "key_points": "Thank user for feature suggestion, direct to Spotify Community ideas board.",
+    "human_score_baseline": 4.0
+  },
+  {
+    "id": "eval_179",
+    "tweet": "@SpotifyCares Your bot is completely useless! Get me a real human manager right now!",
+    "expected_intent": "Escalation Required",
+    "expected_action": "escalate",
+    "key_points": "Apologize for frustration, route directly to human support specialist.",
+    "human_score_baseline": 5.0
+  },
+  {
+    "id": "eval_180",
+    "tweet": "@SpotifyCares Unbelievable scam! You billed me after I cancelled last month. Disgusting!",
+    "expected_intent": "Escalation Required",
+    "expected_action": "escalate",
+    "key_points": "Empathetic tone, escalate immediately to billing supervisor via DM.",
+    "human_score_baseline": 4.0
+  }
+]
